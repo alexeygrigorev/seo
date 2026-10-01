@@ -60,9 +60,41 @@ also passed using the production builder and Node.js 22.
 
 ## Status and remaining verification
 
-**PR open; fixes have not been deployed or verified by a fresh Ahrefs crawl.**
-Merge PR #3, verify the Pages deployment succeeds, inspect live canonical
-URLs, and rerun Ahrefs. Record actual post-deployment counts here.
+PR #3 merged on October 1 at 20:06:45 UTC, merge commit
+`bab70acf26790891b7bcd721e95ff76971130cc0`. The
+[Pages deployment](https://github.com/PocketShell-io/pocketshell-site/actions/runs/36919198209)
+completed successfully.
+
+[Live verification](live-verification.json) fetched the sitemap and all 14
+listed pages with redirect following disabled: every response was HTTP 200.
+The actual downloaded production HTML passed the same checker (14 sitemap
+pages, 13 blog pages, 121 internal blog links), including self-canonicals,
+metadata limits, and social/structured-data URLs.
+
+The post-deployment Ahrefs crawl `01-10-2026T221021P0200` completed with
+36 URLs crawled, 17 internal pages, **health score 100 (previously 73)**,
+zero errors, three warnings, and 40 notices.
+
+The all-tracked issue table confirms:
+
+| Original issue | Before | After |
+| --- | ---: | ---: |
+| Canonical points to redirect | 13 | 0 |
+| Non-canonical page in sitemap | 13 | 0 |
+| Page has links to redirect (indexable / non-indexable) | 1 / 13 | 0 / 0 |
+| Meta description too long (indexable / non-indexable) | 1 / 7 | 0 / 0 |
+| Title too long (non-indexable) | 2 | 0 |
+
+Ahrefs also confirms 13 canonical changes, eight description changes, and
+two title-tag changes. [Structured recrawl results](ahrefs-resolved-issues.json)
+preserve the observed counts.
+
+Remaining findings include three redirect warnings, two HTTP-to-HTTPS
+redirect notices, one robots-disallow notice, change notices, and 14 changed
+pages not submitted to IndexNow. A health score of 100 means zero errors
+in this audit, not the absence of all warnings or notices.
+
+![Post-deployment Ahrefs health score](ahrefs-health-100.png)
 
 Intentional redirects (HTTP to HTTPS, slashless bookmarks, old `/app/` and
 `/login/` links to the app subdomain) may still appear in audits. The fix

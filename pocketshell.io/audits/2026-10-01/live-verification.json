@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-10-01T20:09:36.081Z",
+  "sitemap_status": 200,
+  "pages": [
+    {
+      "url": "https://pocketshell.io/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/aplexer-agent-multiplexer/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/aplexer-crash-warnings/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/check-ai-agents-from-phone/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/keep-ssh-session-alive/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/manage-ai-agents-over-ssh/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/multiple-ai-coding-agents/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-agent-forwarding/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-ai-agents-remote-machines/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-authorized-keys-hardening/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-config-file/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-from-ipad-iphone/",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "https://pocketshell.io/blog/tmux-persistent-ssh-sessions/",
+      "status": 200,
+      "redirected": false
+    }
+  ],
+  "validation": "SEO check passed: 14 sitemap pages, 13 blog pages, 121 internal blog links"
+}

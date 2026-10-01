@@ -1,0 +1,32 @@
+import { writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+// Run from the SEO repository: node pocketshell.io/scripts/verify-live.mjs <site-checkout> <snapshot-dir> <report.json>
+const [checkout, snapshot, report] = process.argv.slice(2);
+if (!checkout || !snapshot || !report) throw Error('Provide the site checkout, snapshot directory, and JSON report path');
+const destination = path.resolve(snapshot);
+await mkdir(destination, { recursive: true });
+const sitemapResponse = await fetch('https://pocketshell.io/sitemap.xml', { redirect: 'manual' });
+if (sitemapResponse.status !== 200) throw Error(`Sitemap HTTP ${sitemapResponse.status}`);
+const sitemap = await sitemapResponse.text();
+await writeFile(path.join(destination, 'sitemap.xml'), sitemap);
+const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([,url])=>url);
+const pages = await Promise.all(urls.map(async url => {
+  const parsed = new URL(url);
+  if (parsed.origin !== 'https://pocketshell.io') throw Error(`Unexpected sitemap URL ${url}`);
+  const response = await fetch(url, { redirect: 'manual' });
+  if (response.status !== 200) throw Error(`${url}: HTTP ${response.status}`);
+  const html = await response.text();
+  const relative = parsed.pathname.replace(/^\//, '');
+  const filename = path.join(destination, parsed.pathname.endsWith('/') ? `${relative}index.html` : relative);
+  await mkdir(path.dirname(filename), { recursive: true });
+  await writeFile(filename, html);
+  return { url, status: response.status, redirected: response.redirected };
+}));
+const checker = path.resolve(checkout, 'scripts/check-seo.mjs');
+const validation = execFileSync(process.execPath, [checker, destination], { encoding: 'utf8' }).trim();
+const result = { verified_at: new Date().toISOString(), sitemap_status: sitemapResponse.status, pages, validation };
+await mkdir(path.dirname(path.resolve(report)), { recursive: true });
+await writeFile(report, JSON.stringify(result, null, 2)+'\n');
+console.log(validation);
+console.log(`Live HTTP verification passed: ${pages.length} pages return 200 without redirects`);

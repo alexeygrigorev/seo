@@ -1,0 +1,63 @@
+{
+  "crawl_id": "01-10-2026T221021P0200",
+  "status": "completed",
+  "health_score_before": 73,
+  "health_score_after": 100,
+  "errors": 0,
+  "warnings": 3,
+  "notices": 40,
+  "total_urls_crawled": 36,
+  "internal_pages": 17,
+  "canonical_changes": 13,
+  "description_changes": 8,
+  "title_changes": 2,
+  "resolved_rows": [
+    {
+      "issue": "Canonical points to redirect",
+      "current": 0,
+      "removed": 13
+    },
+    {
+      "issue": "Page has links to redirect",
+      "current": 0,
+      "removed": 1
+    },
+    {
+      "issue": "Page has links to redirect",
+      "current": 0,
+      "removed": 13
+    },
+    {
+      "issue": "Meta description too long",
+      "current": 0,
+      "removed": 1
+    },
+    {
+      "issue": "Title too long",
+      "current": 0,
+      "removed": 0
+    },
+    {
+      "issue": "Meta description too long",
+      "current": 0,
+      "removed": 7
+    },
+    {
+      "issue": "Title too long",
+      "current": 0,
+      "removed": 2
+    },
+    {
+      "issue": "Non-canonical page in sitemap",
+      "current": 0,
+      "removed": 13
+    }
+  ],
+  "remaining": [
+    "3XX redirect: 3",
+    "HTTP to HTTPS redirect: 2",
+    "Robots.txt rules disallow to crawl: 1",
+    "Change notices: 13 canonical URLs, 8 descriptions, 2 title tags",
+    "Changed pages not submitted to IndexNow: 14"
+  ]
+}

@@ -6,7 +6,7 @@
   "source_base_commit": "d445b13f3a7a5b2b9067df6faab15a8077f4cc60",
   "fix_commit": "c79f83ba104bd43a68011f2d624b0e2d121f7081",
   "pull_request": "https://github.com/PocketShell-io/pocketshell-site/pull/3",
-  "deployment_status": "pending merge and deployment; not live verified",
+  "deployment_status": "merged and deployed; live verification passed; completed Ahrefs recrawl confirms original issues resolved",
   "blog_index": {
     "canonical_before": "https://pocketshell.io/blog",
     "canonical_after": "https://pocketshell.io/blog/"
@@ -160,5 +160,70 @@
       "title_before": "aplexer crash warnings: dead sessions stay visible until you acknowledge them — PocketShell",
       "title_after": "aplexer crash warnings: acknowledge dead agent sessions — PocketShell"
     }
-  ]
+  ],
+  "merge_commit": "bab70acf26790891b7bcd721e95ff76971130cc0",
+  "deployment_run": "https://github.com/PocketShell-io/pocketshell-site/actions/runs/36919198209",
+  "post_deployment_audit": {
+    "crawl_id": "01-10-2026T221021P0200",
+    "status": "completed",
+    "health_score_before": 73,
+    "health_score_after": 100,
+    "errors": 0,
+    "warnings": 3,
+    "notices": 40,
+    "total_urls_crawled": 36,
+    "internal_pages": 17,
+    "canonical_changes": 13,
+    "description_changes": 8,
+    "title_changes": 2,
+    "resolved_rows": [
+      {
+        "issue": "Canonical points to redirect",
+        "current": 0,
+        "removed": 13
+      },
+      {
+        "issue": "Page has links to redirect",
+        "current": 0,
+        "removed": 1
+      },
+      {
+        "issue": "Page has links to redirect",
+        "current": 0,
+        "removed": 13
+      },
+      {
+        "issue": "Meta description too long",
+        "current": 0,
+        "removed": 1
+      },
+      {
+        "issue": "Title too long",
+        "current": 0,
+        "removed": 0
+      },
+      {
+        "issue": "Meta description too long",
+        "current": 0,
+        "removed": 7
+      },
+      {
+        "issue": "Title too long",
+        "current": 0,
+        "removed": 2
+      },
+      {
+        "issue": "Non-canonical page in sitemap",
+        "current": 0,
+        "removed": 13
+      }
+    ],
+    "remaining": [
+      "3XX redirect: 3",
+      "HTTP to HTTPS redirect: 2",
+      "Robots.txt rules disallow to crawl: 1",
+      "Change notices: 13 canonical URLs, 8 descriptions, 2 title tags",
+      "Changed pages not submitted to IndexNow: 14"
+    ]
+  }
 }

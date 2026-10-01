@@ -107,6 +107,15 @@ workflow validates the production Linux builder. After merging, wait for
 
 Then verify the live blog index and posts declare self-canonicals and that
 those URLs return 200 without redirecting. Verify the live sitemap agrees.
+From the SEO repository, the site-specific live check downloads a snapshot
+and runs the checker from the PocketShell source checkout:
+
+```sh
+node pocketshell.io/scripts/verify-live.mjs ../pocketshell-site work/pocketshell-live pocketshell.io/audits/2026-10-01/live-verification.json
+```
+
+Choose a new dated report path for future audits. It follows no redirects
+and preserves the downloaded HTML in the specified snapshot directory.
 Start a fresh crawl at
 [PocketShell Site Audit](https://app.ahrefs.com/site-audit/10427569/overview).
 Wait for completion and inspect both canonical issue counts and the

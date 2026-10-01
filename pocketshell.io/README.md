@@ -17,9 +17,14 @@ shared canonical, Open Graph, and structured-data URLs, internal blog links,
 eight long descriptions, and two long search titles. It adds a generated-site
 checker to pull-request CI and the deployment build.
 
-Local production-builder validation and Linux CI pass. **The PR is open;
-deployment and a fresh Ahrefs crawl remain pending.** These records do not
-claim the live audit is resolved.
+PR #3 is merged at `bab70acf26790891b7bcd721e95ff76971130cc0`. The
+[Pages deployment](https://github.com/PocketShell-io/pocketshell-site/actions/runs/36919198209)
+succeeded. All 14 live sitemap pages return HTTP 200 without redirects and
+pass the generated-site SEO checker. The completed post-deployment Ahrefs
+crawl reports a **health score of 100 (up from 73)** and zero errors. The
+original canonical, description-length, title-length, and redirect-link
+issues now have zero affected URLs. Three redirect warnings and other
+notices remain; see the audit record.
 
 - [Repeatable workflow](workflow.md)
 - [October 1 audit and validation](audits/2026-10-01/README.md)
