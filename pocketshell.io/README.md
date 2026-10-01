@@ -26,7 +26,7 @@ original canonical, description-length, title-length, and redirect-link
 issues now have zero affected URLs. Three redirect warnings and other
 notices remain; see the audit record.
 
-- [Repeatable workflow](workflow.md)
+- [Full maintenance process and repeatable commands](workflow.md): diagnosis, implementation, validation, PR merge, deployment, production checks, Ahrefs recrawl, and publishing the records.
 - [October 1 audit and validation](audits/2026-10-01/README.md)
 - [Structured before/after changes](audits/2026-10-01/changes.json)
 

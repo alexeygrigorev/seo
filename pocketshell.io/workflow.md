@@ -1,5 +1,34 @@
 # Reproduce the PocketShell SEO fix
 
+## Process used on October 1, 2026
+
+We followed the Ahrefs email into the affected-URL table, cloned the site,
+and compared its sitemap URLs with the canonical tags produced by the
+shared blog template. This established that the sitemap already used the
+correct trailing-slash URLs; the template and internal links needed fixing.
+
+| Step | Action and evidence |
+| --- | --- |
+| Diagnose | Capture the thirteen HTTP-200 sitemap URLs and their slashless HTTP-301 canonical targets. |
+| Implement | Change shared URL generation and internal links; shorten eight descriptions and two search titles. |
+| Validate locally | Build with the pinned rustkyll release; run the generated-site checker. It failed on the old output and passed on the new output. |
+| Preview | Open the blog index and a post in Chrome; inspect DOM metadata, card links, and visible headings. |
+| Review | Push `fix/ahrefs-canonical-urls` and open PR #3. Its Linux CI build passed. |
+| Release | Merge the checked PR after the user requested it; update the local `main` checkout and wait for the Pages deployment. |
+| Check production | Fetch the live sitemap and every listed page without following redirects, then run the same checker against the downloaded HTML. |
+| Recrawl | Start a new Ahrefs crawl after deployment and inspect the completed comparison with the original crawl. |
+| Record | Save before/after metadata, live HTTP results, resolved issue counts, and a screenshot; commit and push this SEO repo. |
+
+The source fix was commit `c79f83ba104bd43a68011f2d624b0e2d121f7081`.
+PR #3 merged as `bab70acf26790891b7bcd721e95ff76971130cc0`.
+Deployment run `36919198209` succeeded. The completed recrawl
+`01-10-2026T221021P0200` raised the health score from 73 to 100 and cleared
+the targeted issues. Full evidence is in the
+[dated audit record](audits/2026-10-01/README.md).
+
+For the next alert, follow the sections below and use a new branch and
+dated audit folder. Keep the October 1 evidence as a historical record.
+
 ## Locate the alert
 
 In the signed-in Gmail session, find the Ahrefs email named
@@ -27,6 +56,10 @@ If the checkout exists, inspect its status before pulling or switching
 branches. Read any applicable `AGENTS.md`, then `_config.yml`, `Makefile`,
 and `.github/workflows/deploy.yml`. This project has Jekyll-style sources,
 but production uses **rustkyll**, not a Ruby Jekyll build.
+
+The example branch above already exists from this fix. For future work,
+start a new branch from an up-to-date `main` with a name matching the new
+issue. Preserve any existing local changes before switching branches.
 
 Key files:
 
@@ -60,7 +93,7 @@ checks, not promises about search results or rankings.
 
 ## Build and validate
 
-Linux/macOS, with Node.js available:
+Linux amd64, with Node.js available:
 
 ```sh
 make install
@@ -105,6 +138,26 @@ Commit the source changes, push the branch, and open a PR. The `Check site`
 workflow validates the production Linux builder. After merging, wait for
 `Deploy site` to finish successfully. Deployment also runs `make check`.
 
+The release commands used for this fix, from `~/git/pocketshell-site`, were:
+
+```sh
+gh pr checks 3 --repo PocketShell-io/pocketshell-site
+gh pr view 3 --repo PocketShell-io/pocketshell-site --json state,mergeable,mergeStateStatus,headRefOid
+gh pr merge 3 --repo PocketShell-io/pocketshell-site --merge --match-head-commit c79f83ba104bd43a68011f2d624b0e2d121f7081
+git switch main
+git pull --ff-only origin main
+gh run list --repo PocketShell-io/pocketshell-site --branch main --limit 3 --json databaseId,status,conclusion,headSha,url
+gh run view 36919198209 --repo PocketShell-io/pocketshell-site --json status,conclusion,jobs
+```
+
+These IDs document the completed release. For another PR, substitute its
+number, reviewed head commit, and deployment run ID. Check that the
+deployment's `headSha` matches the new merge commit; an older successful
+deployment does not prove the new changes are live. `gh pr merge` updates
+remote `main` and triggers deployment, so an additional source push after
+merging is unnecessary. The separate SEO documentation commit still needs
+its own push.
+
 Then verify the live blog index and posts declare self-canonicals and that
 those URLs return 200 without redirecting. Verify the live sitemap agrees.
 From the SEO repository, the site-specific live check downloads a snapshot
@@ -122,6 +175,21 @@ Wait for completion and inspect both canonical issue counts and the
 description/title issues. Record the new crawl ID and remaining findings.
 Do not treat a local build or an old crawl as live proof.
 
+In Ahrefs, click **New crawl** on the PocketShell overview. The interface
+switches to **Crawl log** and progresses through Crawling and Finalizing.
+Wait until **Project history** shows Completed. This crawl took 2m 18s.
+Then open **Overview** for the health score and **All issues → All tracked**
+for explicit zero counts and removed-URL counts. The Actual filter hides
+resolved issues, so it is insufficient for recording their before/after
+counts. Compare with the original crawl, not another project's audit.
+
+For this run, both canonical errors went from 13 to 0, long descriptions
+from 8 to 0 across indexable/non-indexable groups, long titles from 2 to 0,
+and pages linking to redirects from 14 to 0. Ahrefs also reported exactly
+13 canonical changes, eight description changes, and two title changes.
+Record remaining warnings and notices separately; health score 100 did
+not mean every notice had disappeared.
+
 ## Update this SEO repository
 
 Add a dated record below `pocketshell.io/audits/`. Include the baseline,
@@ -130,3 +198,29 @@ validation, deployment status, and recrawl outcome. Update the project
 README status. Commit and push this SEO repository after reviewing the
 files for credentials and private data. Keep each site's records in its
 own folder.
+
+For the October 1 audit we saved:
+
+- `ahrefs-baseline.txt`: original thirteen-page issue table.
+- `changes.json`: source commits and per-page before/after metadata.
+- `blog-preview.png`: local visual check.
+- `live-verification.json`: production HTTP statuses and checker result.
+- `ahrefs-resolved-issues.json`: completed recrawl counts and remaining findings.
+- `ahrefs-health-100.png`: final overview screenshot.
+
+From `~/git/seo`, review and publish only the intended PocketShell records:
+
+```sh
+git diff --check
+git diff -- pocketshell.io
+git add pocketshell.io
+git commit -m "Document PocketShell SEO maintenance process"
+git push origin main
+git status --short
+git rev-parse HEAD
+git ls-remote origin refs/heads/main
+```
+
+Verify that the local and remote commit hashes match. Include untracked
+files in the review before staging, and keep downloaded HTML snapshots in
+scratch storage rather than adding them to the public repository.
