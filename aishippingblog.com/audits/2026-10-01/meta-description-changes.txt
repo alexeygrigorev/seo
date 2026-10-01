@@ -1,0 +1,202 @@
+Aishippingblog meta description fixes — 2026-10-01
+
+36 URLs fixed and verified live (33 posts, 3 inherited comment pages).
+All replacement descriptions are 134–157 characters.
+
+https://aishippingblog.com/p/devops-and-observability-for-an-ai
+Status: Fixed and verified live
+Before (31): Part 4 of AI Dev Tools Zoomcamp
+After (144): Make an AI-built app production-ready with dev and prod environments, CI/CD, OpenTelemetry, Grafana dashboards, alerts, and an AI on-call agent.
+
+https://aishippingblog.com/archive
+Status: Unresolved: generated Substack archive/sitemap page; no SEO edit control found
+Before (50): Full archive of all the posts from Alexey On Data.
+
+https://aishippingblog.com/p/last-call-ai-engineering-buildcamp
+Status: Fixed and verified live
+Before (46): The enrollment deadline is next week on Monday
+After (152): Explore AI Engineering Buildcamp Cohort 4: the curriculum, capstone projects, coding agents, and answers to questions from the September launch session.
+
+https://aishippingblog.com/p/13-ai-projects-from-ai-engineering
+Status: Fixed and verified live
+Before (38): See what the course participants built
+After (139): Discover 13 AI projects from Buildcamp Cohort 3, including a chess coach, exam generator, RAG pipeline, job tools, and research assistants.
+
+https://aishippingblog.com/p/50-theory-interview-questions-for
+Status: Fixed and verified live
+Before (43): Plus, downloadable cheatsheets with answers
+After (155): Prepare for AI engineer interviews with 50 theory questions on LLMs, RAG, agents, evaluation, and production systems, plus downloadable answer cheatsheets.
+
+https://aishippingblog.com/p/ai-dev-tools-zoomcamp-2026-starts
+Status: Fixed and verified live
+Before (45): From Idea to Production with AI Coding Agents
+After (134): Explore the free AI Dev Tools Zoomcamp 2026: learn to specify, build, test, deploy, and operate full-stack apps with AI coding agents.
+
+https://aishippingblog.com/p/from-idea-to-production
+Status: Fixed and verified live
+Before (56): Build, deploy and operate your app with AI coding agents
+After (154): Follow 28 practical prompts to take an app from idea to production with AI coding agents, covering specifications, testing, deployment, and observability.
+
+https://aishippingblog.com/p/ai-native-development-specifications
+Status: Fixed and verified live
+Before (42): Part 1 of the AI Dev Tools Zoomcamp series
+After (144): Turn vague ideas into clear specifications and verified code with AI coding agents, using context engineering, focused roles, loops, and graphs.
+
+https://aishippingblog.com/p/what-1000-job-descriptions-reveal
+Status: Fixed and verified live
+Before (84): Learn what an AI engineer is based on analysis of real AI engineer job descriptions.
+After (148): See what 1,000+ job descriptions reveal about AI engineers in 2026: role types, key skills, tools, and the focus on building production LLM systems.
+
+https://aishippingblog.com/p/free-and-affordable-ai-native-development
+Status: Fixed and verified live
+Before (23): Build more, learn more!
+After (147): Explore free and affordable AI coding agents, coding plans, API options, and promotions to help you build projects and learn AI-native development.
+
+https://aishippingblog.com/p/how-to-do-evals-in-2026
+Status: Fixed and verified live
+Before (50): A tool-agnostic framework for evaluating AI agents
+After (153): Learn a practical framework for evaluating AI agents: build a gold standard dataset, align LLM judges, test failure cases, and monitor real-user results.
+
+https://aishippingblog.com/sitemap
+Status: Unresolved: generated Substack archive/sitemap page; no SEO edit control found
+Before (32): Sitemap index for Alexey On Data
+
+https://aishippingblog.com/p/what-ai-forward-deployed-engineers
+Status: Fixed and verified live
+Before (38): An Analysis of 113 AI FDE Job Postings
+After (157): Understand AI forward-deployed engineering through 113 job postings: customer-facing responsibilities, technical skills, and how the role compares to others.
+
+https://aishippingblog.com/p/deploy-a-full-stack-app-with-ai-coding
+Status: Fixed and verified live
+Before (31): Part 3 of AI Dev Tools Zoomcamp
+After (142): Deploy a full-stack app with AI coding assistants: add Docker, Postgres, integration tests, AWS infrastructure, and CI/CD with GitHub Actions.
+
+https://aishippingblog.com/p/build-and-ship-a-full-stack-app-with
+Status: Fixed and verified live
+Before (42): Part 2 of the AI Dev Tools Zoomcamp series
+After (157): Build a full-stack app with AI coding assistants, from a clear specification and React frontend to an OpenAPI contract, FastAPI backend, and SQLite database.
+
+https://aishippingblog.com/p/the-system-i-built-to-ship-code-from
+Status: Fixed and verified live
+Before (99): A remote server, tmux, voice-driven Claude Code, and a workflow designed around the in-between time
+After (139): See how I ship code from a phone using a remote Linux server, tmux, SSH, and voice-driven coding agents to work during commutes and travel.
+
+https://aishippingblog.com/p/getting-an-ai-engineering-job
+Status: Fixed and verified live
+Before (45): The 5-step framework that will land you a job
+After (146): Use a five-step AI engineering job search framework: network, apply, build portfolio projects, record interview questions, and reflect to improve.
+
+https://aishippingblog.com/p/9-real-life-ai-projects-from-ai-engineering
+Status: Fixed and verified live
+Before (75): This is what the students of the second cohort built + AI Shipping Labs new
+After (154): Explore nine real-life AI projects from Buildcamp graduates, including meal planning, engineering decision search, voice tools, and offline transcription.
+
+https://aishippingblog.com/p/karpathys-autoresearch-went-viral
+Status: Fixed and verified live
+Before (83): An agent that runs experiments, edits training code, and improves models in a loop.
+After (150): Understand Karpathy’s autoresearch: an AI agent edits training code, runs experiments, and keeps improvements in a loop, plus an idea to try yourself.
+
+https://aishippingblog.com/sitemap/2025
+Status: Unresolved: generated Substack archive/sitemap page; no SEO edit control found
+Before (43): List of posts from 2025 from Alexey On Data
+
+https://aishippingblog.com/p/chatgpt-data-viewer
+Status: Fixed and verified live
+Before (38): I often use ChatGPT for brainstorming.
+After (155): See how I built ChatGPT Data Viewer with Claude Code to search a conversation export locally, explore statistics, and browse a GitHub-style activity graph.
+
+https://aishippingblog.com/p/my-pypi-release-pipeline-for-python
+Status: Fixed and verified live
+Before (53): How I release Python packages with agents and without
+After (144): Follow my Python library release workflow from naming and packaging to publishing on PyPI, automating releases with CI, and using coding agents.
+
+https://aishippingblog.com/p/how-i-built-sqlitesearch-a-lightweight
+Status: Fixed and verified live
+Before (83): My full workflow: research, architecture decisions, implementation, and publishing.
+After (147): See how I built SQLiteSearch, a lightweight Python library for persistent local text and vector search, from research and design to a PyPI release.
+
+https://aishippingblog.com/p/the-system-i-built-for-aws-access
+Status: Fixed and verified live
+Before (34): I sometimes run offline workshops.
+After (137): See how I built temporary AWS access for workshops and coding agents using a credential endpoint, sandbox account, and GitHub Codespaces.
+
+https://aishippingblog.com/p/my-experiments-with-claude-code/comments
+Status: Fixed and verified live
+Before (75): Custom slash commands, running Claude forever, and metabolism simulator app
+After (146): Explore my Claude Code experiments with custom slash commands, persistent agent loops, Python stop hooks, and building a metabolism simulator app.
+
+https://aishippingblog.com/p/ai-set-up-my-infra-in-10-minutes
+Status: Fixed and verified live
+Before (99): An experiment in image-to-HTML automation, AI self-evaluation, and effortless infrastructure setup.
+After (150): Explore my AI certificate workflow: image-to-HTML experiments and self-evaluation struggled, while setting up storage, HTTPS, and hosting worked well.
+
+https://aishippingblog.com/p/benefits-of-learning-in-public-and/comments
+Status: Fixed and verified live
+Before (88): How sharing your learning publicly leads to feedback, visibility, and real opportunities
+After (156): Discover how learning in public improves understanding, invites feedback, builds visibility, and creates career opportunities, with DataTalks.Club examples.
+
+https://aishippingblog.com/p/how-to-set-up-your-coding-agent-a
+Status: Fixed and verified live
+Before (88): Start with one real task, then add skills, subagents, and extra tools when you need them
+After (145): Get started with a coding agent on one real task, then build useful automation, document repeated work, and add skills and subagents when needed.
+
+https://aishippingblog.com/p/how-to-write-a-good-readme
+Status: Fixed and verified live
+Before (50): 16 sections your project should have in the README
+After (149): Write a clear project README with 16 essential sections that help peer reviewers, hiring teams, and your future self understand and run your project.
+
+https://aishippingblog.com/sitemap/2026
+Status: Unresolved: generated Substack archive/sitemap page; no SEO edit control found
+Before (43): List of posts from 2026 from Alexey On Data
+
+https://aishippingblog.com/p/my-experiments-with-claude-code
+Status: Fixed and verified live
+Before (75): Custom slash commands, running Claude forever, and metabolism simulator app
+After (146): Explore my Claude Code experiments with custom slash commands, persistent agent loops, Python stop hooks, and building a metabolism simulator app.
+
+https://aishippingblog.com/p/how-we-built-ai-shipping-labs
+Status: Fixed and verified live
+Before (72): From a simple Next.js MVP to a Django platform built with AI agent teams
+After (150): Learn how we built the AI Shipping Labs website with v0 and Cursor, then developed a Django platform using AI agent teams, starting from a simple MVP.
+
+https://aishippingblog.com/p/benefits-of-learning-in-public-and
+Status: Fixed and verified live
+Before (88): How sharing your learning publicly leads to feedback, visibility, and real opportunities
+After (156): Discover how learning in public improves understanding, invites feedback, builds visibility, and creates career opportunities, with DataTalks.Club examples.
+
+https://aishippingblog.com/p/rebuilding-a-faq-system-for-datatalksclub
+Status: Fixed and verified live
+Before (54): Serving 100k+ Learners with a Serverless FAQ Assistant
+After (150): Learn how I rebuilt the DataTalks.Club FAQ system with automated dataset curation, search, evaluation, and a serverless Slack assistant on AWS Lambda.
+
+https://aishippingblog.com/p/ai-design-for-non-designers
+Status: Fixed and verified live
+Before (97): My workflow for AI-generated interfaces: how I use mockups and design guidelines to avoid AI slop
+After (145): Improve AI-generated interfaces without design expertise using my workflow of mockups, design guidelines, and iteration to avoid generic layouts.
+
+https://aishippingblog.com/p/the-system-i-built-to-ship-code-from/comments
+Status: Fixed and verified live
+Before (99): A remote server, tmux, voice-driven Claude Code, and a workflow designed around the in-between time
+After (139): See how I ship code from a phone using a remote Linux server, tmux, SSH, and voice-driven coding agents to work during commutes and travel.
+
+https://aishippingblog.com/p/how-i-rebuilt-my-website-in-10-minutes
+Status: Fixed and verified live
+Before (97): Plus: how you can experiment with AI, free learning resources, tools I tried, and my 2025 wrapped
+After (153): See how I rebuilt my personal website in ten minutes with Lovable and GitHub Copilot, converting a React design to Jekyll and hosting it on GitHub Pages.
+
+https://aishippingblog.com/p/last-call-for-ai-engineering-buildcamp
+Status: Fixed and verified live
+Before (74): The course starts April 13, and I’m not planning another cohort right now.
+After (148): Explore the April 2026 AI Engineering Buildcamp announcement, covering RAG, agents, testing, monitoring, evaluation, and hands-on capstone projects.
+
+https://aishippingblog.com/p/coming-soon
+Status: Fixed and verified live
+Before (44): Well I guess I need to write something here?
+After (147): My first Substack post: starting Alexey On Data and experimenting with Nano Banana to turn a personal photo into a dinosaur-riding profile picture.
+
+https://aishippingblog.com/p/six-projects-that-didnt-make-it
+Status: Fixed and verified live
+Before (39): But I learned a ton while building them
+After (148): Explore six projects I started and abandoned, what I learned while building with coding agents, and how some ideas survived as smaller useful tools.
+
+A fresh Ahrefs crawl completed after the updates. It confirmed 4 URLs with short descriptions remaining and 36 changed meta descriptions.
