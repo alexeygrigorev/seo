@@ -1,0 +1,164 @@
+{
+  "site": "https://pocketshell.io",
+  "date": "2026-10-01",
+  "ahrefs_project_id": 10427569,
+  "crawl": "01-10-2026T140657",
+  "source_base_commit": "d445b13f3a7a5b2b9067df6faab15a8077f4cc60",
+  "fix_commit": "c79f83ba104bd43a68011f2d624b0e2d121f7081",
+  "pull_request": "https://github.com/PocketShell-io/pocketshell-site/pull/3",
+  "deployment_status": "pending merge and deployment; not live verified",
+  "blog_index": {
+    "canonical_before": "https://pocketshell.io/blog",
+    "canonical_after": "https://pocketshell.io/blog/"
+  },
+  "homepage": {
+    "description_before": "Your AI agents run on your own machines. PocketShell opens a real SSH terminal to them in a browser tab - sign in with Google, pick a host, and check on Claude Code, Codex, or OpenCode. Your browser is the terminal.",
+    "description_after": "Open an SSH terminal in your browser with PocketShell. Sign in with Google, pick a host, and check on Claude Code, Codex, or OpenCode from anywhere."
+  },
+  "posts": [
+    {
+      "url": "https://pocketshell.io/blog/keep-ssh-session-alive/",
+      "source": "2026-09-11-keep-ssh-session-alive.md",
+      "canonical_before": "https://pocketshell.io/blog/keep-ssh-session-alive",
+      "canonical_after": "https://pocketshell.io/blog/keep-ssh-session-alive/",
+      "description_before": "Stop SSH freezing on idle: ServerAliveInterval keepalives, server-side timeouts, tmux for detachable sessions, and when mosh is worth installing.",
+      "description_after": "Stop SSH freezing on idle: ServerAliveInterval keepalives, server-side timeouts, tmux for detachable sessions, and when mosh is worth installing.",
+      "description_length_before": 145,
+      "description_length_after": 145,
+      "title_before": "How to Keep SSH Sessions Alive: Keepalives, tmux, Mosh — PocketShell",
+      "title_after": "How to Keep SSH Sessions Alive: Keepalives, tmux, Mosh — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-agent-forwarding/",
+      "source": "2026-09-11-ssh-agent-forwarding.md",
+      "canonical_before": "https://pocketshell.io/blog/ssh-agent-forwarding",
+      "canonical_after": "https://pocketshell.io/blog/ssh-agent-forwarding/",
+      "description_before": "How SSH agent forwarding works, how to enable it with ForwardAgent and ssh-add -h, the real security risks, and when ProxyJump is the better choice.",
+      "description_after": "How SSH agent forwarding works, how to enable it with ForwardAgent and ssh-add -h, the real security risks, and when ProxyJump is the better choice.",
+      "description_length_before": 148,
+      "description_length_after": 148,
+      "title_before": "SSH Agent Forwarding: Setup, Risks, and Safer Paths — PocketShell",
+      "title_after": "SSH Agent Forwarding: Setup, Risks, and Safer Paths — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-ai-agents-remote-machines/",
+      "source": "2026-09-11-ssh-ai-agents-remote-machines.md",
+      "canonical_before": "https://pocketshell.io/blog/ssh-ai-agents-remote-machines",
+      "canonical_after": "https://pocketshell.io/blog/ssh-ai-agents-remote-machines/",
+      "description_before": "How to run Claude Code or Codex CLI on a remote server over SSH: key-based access, a sandboxed user, headless authentication, and aplexer sessions for long-running jobs.",
+      "description_after": "Run Claude Code or Codex CLI on a remote server over SSH, with key-based access, a sandboxed user, headless authentication, and persistent aplexer sessions.",
+      "description_length_before": 169,
+      "description_length_after": 156,
+      "title_before": "Configuring a remote machine over SSH with AI agents — PocketShell",
+      "title_after": "Configuring a remote machine over SSH with AI agents — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-authorized-keys-hardening/",
+      "source": "2026-09-11-ssh-authorized-keys-hardening.md",
+      "canonical_before": "https://pocketshell.io/blog/ssh-authorized-keys-hardening",
+      "canonical_after": "https://pocketshell.io/blog/ssh-authorized-keys-hardening/",
+      "description_before": "Generate ed25519 keys with ssh-keygen, install them with ssh-copy-id, then harden the server: disable passwords and restrict each key's scope.",
+      "description_after": "Generate ed25519 keys with ssh-keygen, install them with ssh-copy-id, then harden the server: disable passwords and restrict each key's scope.",
+      "description_length_before": 142,
+      "description_length_after": 142,
+      "title_before": "SSH Keys and authorized_keys: Setup and Hardening — PocketShell",
+      "title_after": "SSH Keys and authorized_keys: Setup and Hardening — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-config-file/",
+      "source": "2026-09-11-ssh-config-file.md",
+      "canonical_before": "https://pocketshell.io/blog/ssh-config-file",
+      "canonical_after": "https://pocketshell.io/blog/ssh-config-file/",
+      "description_before": "How to use the ~/.ssh/config file: host aliases, per-host keys, wildcards, ProxyJump, connection reuse and includes, with examples and debugging tips.",
+      "description_after": "How to use the ~/.ssh/config file: host aliases, per-host keys, wildcards, ProxyJump, connection reuse and includes, with examples and debugging tips.",
+      "description_length_before": 150,
+      "description_length_after": 150,
+      "title_before": "The SSH config file: ~/.ssh/config with examples — PocketShell",
+      "title_after": "The SSH config file: ~/.ssh/config with examples — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/tmux-persistent-ssh-sessions/",
+      "source": "2026-09-11-tmux-persistent-ssh-sessions.md",
+      "canonical_before": "https://pocketshell.io/blog/tmux-persistent-ssh-sessions",
+      "canonical_after": "https://pocketshell.io/blog/tmux-persistent-ssh-sessions/",
+      "description_before": "Why SSH sessions die with the connection, how tmux keeps your work running on the server, and the commands that let builds and AI agents survive disconnects.",
+      "description_after": "Why SSH sessions die with the connection, how tmux keeps your work running on the server, and the commands that let builds and AI agents survive disconnects.",
+      "description_length_before": 157,
+      "description_length_after": 157,
+      "title_before": "Stop losing work when SSH drops: tmux sessions that survive anything — PocketShell",
+      "title_after": "Keep SSH work alive with persistent tmux sessions — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/aplexer-agent-multiplexer/",
+      "source": "2026-09-12-aplexer-agent-multiplexer.md",
+      "canonical_before": "https://pocketshell.io/blog/aplexer-agent-multiplexer",
+      "canonical_after": "https://pocketshell.io/blog/aplexer-agent-multiplexer/",
+      "description_before": "aplexer is an agent-first alternative to tmux: sessions with a workspace, tag, and engine, per-session process isolation, and commands built for managing Claude, Codex, and Gemini over SSH.",
+      "description_after": "Manage Claude, Codex, and Gemini over SSH with aplexer: named agent sessions, isolated processes, workspaces, tags, and commands for parallel coding work.",
+      "description_length_before": 189,
+      "description_length_after": 154,
+      "title_before": "aplexer: an agent multiplexer for AI coding agents — PocketShell",
+      "title_after": "aplexer: an agent multiplexer for AI coding agents — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/check-ai-agents-from-phone/",
+      "source": "2026-09-12-check-ai-agents-from-phone.md",
+      "canonical_before": "https://pocketshell.io/blog/check-ai-agents-from-phone",
+      "canonical_after": "https://pocketshell.io/blog/check-ai-agents-from-phone/",
+      "description_before": "How to keep an eye on AI coding agents running on a server from your phone: the 30-second check-in over SSH, thumb-sized commands, voice input, and when a browser tab beats an SSH client.",
+      "description_after": "Check AI coding agents from your phone with SSH or a browser terminal: quick status checks, simple commands, voice input, and access to remote sessions.",
+      "description_length_before": 187,
+      "description_length_after": 152,
+      "title_before": "Check on your AI coding agents from your phone — PocketShell",
+      "title_after": "Check on your AI coding agents from your phone — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/manage-ai-agents-over-ssh/",
+      "source": "2026-09-12-manage-ai-agents-over-ssh.md",
+      "canonical_before": "https://pocketshell.io/blog/manage-ai-agents-over-ssh",
+      "canonical_after": "https://pocketshell.io/blog/manage-ai-agents-over-ssh/",
+      "description_before": "Day-two operations for AI agents on remote servers: listing sessions and their states over SSH, attaching without losing context, reading transcripts, sending input safely, and cleaning up stuck runs.",
+      "description_after": "Manage AI agents over SSH: list sessions, attach without losing context, read transcripts, send input safely, and clean up stuck runs on remote servers.",
+      "description_length_before": 200,
+      "description_length_after": 152,
+      "title_before": "Managing AI agents over SSH: a day-two guide — PocketShell",
+      "title_after": "Managing AI agents over SSH: a day-two guide — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/multiple-ai-coding-agents/",
+      "source": "2026-09-12-multiple-ai-coding-agents.md",
+      "canonical_before": "https://pocketshell.io/blog/multiple-ai-coding-agents",
+      "canonical_after": "https://pocketshell.io/blog/multiple-ai-coding-agents/",
+      "description_before": "How to run several AI coding agents at the same time without collisions: git worktrees for isolation, named sessions you can address, a status board instead of terminal piles, and task sequencing that keeps agents from stepping on each other.",
+      "description_after": "Run multiple AI coding agents in parallel using git worktrees, named sessions, a status board, and task sequencing to keep their changes from colliding.",
+      "description_length_before": 242,
+      "description_length_after": 152,
+      "title_before": "How to run multiple AI coding agents in parallel — PocketShell",
+      "title_after": "How to run multiple AI coding agents in parallel — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/ssh-from-ipad-iphone/",
+      "source": "2026-09-12-ssh-from-ipad-iphone.md",
+      "canonical_before": "https://pocketshell.io/blog/ssh-from-ipad-iphone",
+      "canonical_after": "https://pocketshell.io/blog/ssh-from-ipad-iphone/",
+      "description_before": "How to SSH from an iPad or iPhone in 2026: native clients, key setup, mosh for flaky mobile networks, the keyboard problem, and the browser option when you can't install apps.",
+      "description_after": "SSH from an iPad or iPhone: choose a client, set up keys, handle mobile networks with mosh, and use a browser terminal when you cannot install apps.",
+      "description_length_before": 175,
+      "description_length_after": 148,
+      "title_before": "SSH from an iPad or iPhone: what actually works — PocketShell",
+      "title_after": "SSH from an iPad or iPhone: what actually works — PocketShell"
+    },
+    {
+      "url": "https://pocketshell.io/blog/aplexer-crash-warnings/",
+      "source": "2026-09-17-aplexer-crash-warnings.md",
+      "canonical_before": "https://pocketshell.io/blog/aplexer-crash-warnings",
+      "canonical_after": "https://pocketshell.io/blog/aplexer-crash-warnings/",
+      "description_before": "An OOM kill or a worker crash used to be erased by routine cleanup. aplexer now writes an ack-gated warning that shows in every listing until you explicitly acknowledge it.",
+      "description_after": "See when an aplexer agent crashes or is killed by OOM. Dead sessions stay visible with a warning in every listing until you explicitly acknowledge them.",
+      "description_length_before": 172,
+      "description_length_after": 152,
+      "title_before": "aplexer crash warnings: dead sessions stay visible until you acknowledge them — PocketShell",
+      "title_after": "aplexer crash warnings: acknowledge dead agent sessions — PocketShell"
+    }
+  ]
+}

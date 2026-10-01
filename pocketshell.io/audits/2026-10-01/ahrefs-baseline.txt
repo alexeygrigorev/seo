@@ -1,0 +1,320 @@
+	
+PR
+	
+URL
+	
+Organic traffic
+	
+HTTP status code
+	
+Content type
+	
+Is in sitemap
+	
+Canonical URL
+	
+Patch it
+	
+Referenced in sitemaps
+	
+No. of all inlinks
+	
+	
+18
+	
+HTML
+SSH and terminal guides — PocketShell blog
+https://pocketshell.io/blog/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+14 
+	
+	
+1
+	
+HTML
+The SSH config file: ~/.ssh/config with examples — PocketShell
+https://pocketshell.io/blog/ssh-config-file/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/ssh-config-file 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+aplexer: an agent multiplexer for AI coding agents — PocketShell
+https://pocketshell.io/blog/aplexer-agent-multiplexer/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/aplexer-agent-multiplexer 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+SSH Agent Forwarding: Setup, Risks, and Safer Paths — PocketShell
+https://pocketshell.io/blog/ssh-agent-forwarding/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/ssh-agent-forwarding 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+Managing AI agents over SSH: a day-two guide — PocketShell
+https://pocketshell.io/blog/manage-ai-agents-over-ssh/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/manage-ai-agents-over-ssh 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+SSH Keys and authorized_keys: Setup and Hardening — PocketShell
+https://pocketshell.io/blog/ssh-authorized-keys-hardening/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/ssh-authorized-keys-hardening 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+Configuring a remote machine over SSH with AI agents — PocketShell
+https://pocketshell.io/blog/ssh-ai-agents-remote-machines/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/ssh-ai-agents-remote-machines 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+Stop losing work when SSH drops: tmux sessions that survive anything — PocketShell
+https://pocketshell.io/blog/tmux-persistent-ssh-sessions/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/tmux-persistent-ssh-sessions 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+How to run multiple AI coding agents in parallel — PocketShell
+https://pocketshell.io/blog/multiple-ai-coding-agents/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/multiple-ai-coding-agents 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+SSH from an iPad or iPhone: what actually works — PocketShell
+https://pocketshell.io/blog/ssh-from-ipad-iphone/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/ssh-from-ipad-iphone 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+Check on your AI coding agents from your phone — PocketShell
+https://pocketshell.io/blog/check-ai-agents-from-phone/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/check-ai-agents-from-phone 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+aplexer crash warnings: dead sessions stay visible until you acknowledge them — PocketShell
+https://pocketshell.io/blog/aplexer-crash-warnings/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/aplexer-crash-warnings 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
+	
+1
+	
+HTML
+How to Keep SSH Sessions Alive: Keepalives, tmux, Mosh — PocketShell
+https://pocketshell.io/blog/keep-ssh-session-alive/ 
+	
+0
+	
+200
+	
+text/html; charset=utf-8
+	
+Yes
+	
+https://pocketshell.io/blog/keep-ssh-session-alive 
+301
+	
+	
+https://pocketshell.io/sitemap.xml 
+	
+1 
+	
